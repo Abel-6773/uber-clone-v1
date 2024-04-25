@@ -1,68 +1,201 @@
+* {
+  margin: 0px 0px;
+  padding: 0px 0px;
+  box-sizing: border-box;
+}
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  --black: #000;
+  --white: #fff;
+  --lightGray: #afafaf;
+  --darkGray: #4b4b4b;
+  --paleGray: #f6f6f6;
 }
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+/* Utilities */
+.center {
+  text-align: center;
 }
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
+.txt-xl {
+  font-size: 48px;
+  line-height: 60px;
+  font-weight: 600;
+  padding: 20px 0px;
 }
-button:hover {
-  border-color: #646cff;
+.txt-lg {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 600;
+  padding: 15px 0px;
 }
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+.txt-md {
+  font-size: 24px;
+  font-weight: 600;
+  padding: 10px 0px;
 }
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+.txt-sm {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 300;
+  padding: 5px 0px;
+}
+.txt-sm-bld {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 450;
+  padding: 5px 0px;
+}
+.txt-xs {
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 300;
+  padding: 5px 0px;
+}
+.txt-xxs {
+  font-size: 10px;
+  line-height: 30px;
+  font-weight: 300;
+  padding: 5px 0px;
+}
+.txt-logo {
+  font-size: 24px;
+  font-weight: 400;
+  padding: 10px 0px;
+}
+.bg-dark {
+  background-color: var(--black);
+}
+.bg-white {
+  background-color: var(--white);
+}
+.container-xl {
+  max-width: 1300px;
+  padding: 0px 30px;
+  margin: auto;
+}
+.container-lg {
+  max-width: 1160px;
+  padding: 0px 30px;
+  margin: auto;
+}
+@media (max-width: 1100px) {
+  /* header */
+  .page-links ul {
+    display: none;
   }
-  a:hover {
-    color: #747bff;
+  .nav-buttons .language,
+  .nav-buttons .help {
+    display: none;
   }
-  button {
-    background-color: #f9f9f9;
+  .nav-buttons .ham-button {
+    display: block;
+  }
+
+  /* homepage */
+
+  /* hero */
+  .homepage-hero-content {
+    display: block;
+    padding: 50px 30px;
+  }
+  .homepage-hero-img img {
+    width: 100%;
+    height: 100%;
+    margin-top: 30px;
+  }
+  .from,
+  .to {
+    width: 100%;
+  }
+  .homepage-hero-input,
+  .homepage-hero-input input {
+    width: 100%;
+  }
+  /* about-us */
+  .about-us .info-container {
+    display: block;
+  }
+  .about-us-img img {
+    width: 100%;
+    height: 100%;
+    margin-top: 30px;
+  }
+  .about-info {
+    max-width: 800px;
+  }
+  /* application */
+  .app-links {
+    display: block;
+  }
+  .arrow-icon {
+    margin-left: auto;
+  }
+  .app-link h3 {
+    width: 100%;
+  }
+  /* footer */
+  .footer-header {
+    display: block;
+  }
+  .footer-header a {
+    display: inline-block;
+    margin: 10px 0px;
+  }
+  .footer-body {
+    grid-template-columns: 1fr 2fr;
+    column-gap: 30px;
+    row-gap: 30px;
+  }
+  .icon-container {
+    display: block;
+  }
+  .icon-container > div:nth-of-type(2) {
+    justify-content: flex-start;
+    margin-top: 30px;
+  }
+  .terms-condition {
+    display: block;
+  }
+  .terms-condition a {
+    width: 100%;
+    text-align: center;
+  }
+  .terms-condition div {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 550px) {
+  /* about section */
+  .about-info .about-buttons {
+    display: block;
+  }
+  .about-buttons button {
+    margin: 10px 5px;
+  }
+  .info-container {
+    padding: 30px 0px;
+  }
+  /* footer */
+  .footer-body {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 400px) {
+  /* header */
+  .logo {
+    margin-right: 0px;
+  }
+  /* utilities */
+  .txt-xl {
+    font-size: 40px;
+  }
+  .txt-lg {
+    font-size: 26px;
+  }
+  .container-xl {
+    padding: 0px;
   }
 }

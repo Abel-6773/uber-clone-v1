@@ -1,0 +1,24 @@
+.learnmore .card-sec {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.learnmore .card {
+  /* max-width: 300px; */
+  margin: 10px;
+}
+.learnmore .card img {
+  max-width: 100%;
+}
+.learnmore .text-area {
+  margin: 50px 0px;
+}
+@media (max-width: 1100px) {
+  .learnmore .card-sec {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .learnmore .card-sec {
+    grid-template-columns: 1fr;
+  }
+}

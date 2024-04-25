@@ -1,0 +1,53 @@
+.drivers-nav {
+  position: sticky;
+  top: 0px;
+  background-color: var(--white);
+}
+.drivers-nav-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+}
+.drivers-nav-content.mb {
+  display: block;
+}
+.drivers-logo {
+  position: sticky;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+}
+.drivers-links ul {
+  display: flex;
+}
+.drivers-links ul.mb {
+  display: block;
+}
+.drivers-links li {
+  list-style: none;
+  margin: 10px;
+}
+.drivers-links a {
+  text-decoration: none;
+  color: var(--darkGray);
+}
+.drivers-links a:hover {
+  color: var(--black);
+}
+.drivers-nav .fonticon {
+  display: none;
+}
+/* responsiveness */
+
+@media (max-width: 1100px) {
+  .drivers-links {
+    display: none;
+  }
+  .drivers-links.active {
+    display: block;
+  }
+  .drivers-nav .fonticon {
+    display: block;
+  }
+}

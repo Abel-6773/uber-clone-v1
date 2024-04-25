@@ -1,0 +1,18 @@
+.drivers-faq h2 {
+  margin-top: 50px;
+}
+.drivers-faq .faq-section {
+  margin-bottom: 60px;
+}
+.drivers-faq .faq {
+  border-bottom: 0.5px solid lightgray;
+  padding: 25px;
+}
+.drivers-faq .faq-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.drivers-faq .faq-body p {
+  margin: 20px 0px;
+}

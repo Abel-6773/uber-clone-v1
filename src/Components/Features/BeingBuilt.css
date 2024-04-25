@@ -1,0 +1,41 @@
+.being-built {
+  display: flex;
+  justify-content: flex-end;
+  background-color: rgba(0, 0, 0, 0.855);
+  color: white;
+  align-items: center;
+}
+.being-built .img-container {
+  width: 40%;
+  margin-left: 50px;
+}
+.being-built .img-container img {
+  width: 100%;
+  max-height: 900px;
+}
+.being-built .masthead {
+  text-align: center;
+  max-width: 80%;
+  padding: 20px;
+}
+.being-built .buttons {
+  display: flex;
+  justify-content: center;
+}
+.being-built .btn-underline.light button {
+  margin: 15px;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+@media (max-width: 1100px) {
+  .being-built .img-container {
+    width: 40%;
+    margin-left: 50px;
+    display: none;
+    /* height: 100vh; */
+  }
+  .being-built {
+    justify-content: center;
+  }
+}

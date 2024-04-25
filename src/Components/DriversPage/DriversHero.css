@@ -1,0 +1,54 @@
+.driverspage-hero {
+  padding: 50px 0px;
+}
+.driverspage-hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 0px;
+}
+.driverspage-hero-img img {
+  width: 550px;
+  height: 550px;
+}
+.driverspage-hero-input {
+  width: 500px;
+}
+.driverspage-hero-input h1,
+.driverspage-hero-input p {
+  color: var(--white);
+}
+.driverspage-hero .buttons {
+  display: flex;
+  margin-top: 30px;
+}
+.driverspage-hero .btn {
+  margin-right: 25px;
+}
+
+/* responsiveness */
+
+@media (max-width: 1100px) {
+  .driverspage-hero-content {
+    display: block;
+  }
+  .driverspage-hero-img img {
+    width: 100%;
+    height: 100%;
+  }
+  .driverspage-hero-input {
+    width: 100%;
+  }
+}
+@media (max-width: 550px) {
+  .driverspage-hero-img img {
+    display: none;
+  }
+  .driverspage-hero .buttons {
+    display: block;
+    margin-top: 30px;
+  }
+  .driverspage-hero .btn {
+    margin-bottom: 20px;
+  }
+}

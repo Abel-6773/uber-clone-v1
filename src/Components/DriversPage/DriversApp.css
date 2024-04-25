@@ -1,0 +1,41 @@
+.drivers-app {
+  padding: 50px 0px;
+  height: 500px;
+  background-image: url("C:\Users\abelt\OneDrive\Desktop\Portfolio\Uber-Clone\public\images\ForDriversPageimgs\D_Driver_Campaign-Carbon-arabic2x.png");
+  background-position: center;
+  background-size: cover;
+}
+.drivers-app-content div {
+  max-width: 400px;
+}
+.drivers-app-content img {
+  width: 100px;
+  height: 100px;
+  display: none;
+}
+.drivers-app .btn-underline.dark button {
+  background-color: var(--paleGray);
+}
+
+/* responsiveness */
+
+@media (max-width: 550px) {
+  .drivers-app {
+    background: none;
+  }
+  .drivers-app .btn-underline.dark button {
+    background-color: var(--white);
+  }
+  .drivers-app-content img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 400px) {
+  .drivers-app {
+    padding: 25px 0px;
+    height: 450px;
+  }
+}

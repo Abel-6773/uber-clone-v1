@@ -1,0 +1,73 @@
+.cost-section-progress {
+  max-width: 20px;
+  margin: 0px 25px;
+}
+.cost-section-progress.before {
+  display: none;
+}
+.cost-section-progress div:nth-of-type(2n) {
+  width: 1.5px;
+  height: 90%;
+  margin: 5px auto;
+}
+.cost-section-progress div {
+  background-color: var(--black);
+  height: 10px;
+  width: 10px;
+  margin: auto;
+}
+.cost-sec {
+  display: flex;
+  justify-content: space-between;
+}
+.cost-sec-content {
+  display: flex;
+  justify-content: space-between;
+}
+.cost-section-textContainer div {
+  max-width: 650px;
+}
+.cost-section-textContainer div,
+.cost-section-images div {
+  height: 250px;
+}
+.infoCard {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 50px auto 80px auto;
+}
+.infoCard .card {
+  width: 300px;
+}
+.infoCard h3 {
+  padding-left: 35px;
+}
+.companiesInfo h2 {
+  margin: 40px 0px;
+}
+.companiesInfo .card img.hovered {
+  transform: scale(1.2);
+  transition: all 0.1s linear;
+}
+
+@media (max-width: 1100px) {
+}
+@media (max-width: 800px) {
+  .cost-section-progress.before {
+    display: block;
+  }
+  .cost-section-progress.after {
+    display: none;
+  }
+  .cost-sec-content {
+    display: block;
+    max-width: 400px;
+  }
+  .cost-sec {
+    justify-content: flex-start;
+  }
+  .cost-section-image img {
+    max-width: 100%;
+  }
+}

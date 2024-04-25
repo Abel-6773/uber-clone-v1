@@ -8,6 +8,8 @@ import {
 import Root from "./Root";
 import HomePage from "./Pages/HomePage";
 import DriversPage from "./Pages/DriversPage";
+import BeingBuilt from "./Components/Features/BeingBuilt";
+import PageNotFound from "./Components/Features/PageNotFound";
 import BusinessPage from "./Pages/BusinessPage";
 
 const router = createBrowserRouter(
@@ -16,6 +18,8 @@ const router = createBrowserRouter(
       <Route index element={<HomePage />} />
       <Route path="DriversPage" element={<DriversPage />} />
       <Route path="BusinessPage" element={<BusinessPage />} />
+      <Route path="BeingBuilt" element={<BeingBuilt />} />
+      <Route path="*" element={<PageNotFound />} />
     </Route>
   )
 );
