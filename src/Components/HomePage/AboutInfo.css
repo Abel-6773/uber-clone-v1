@@ -1,0 +1,8 @@
+.about-info .about-buttons {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin-top: 30px;
+}
+.about-buttons button {
+  margin: 5px;
+}

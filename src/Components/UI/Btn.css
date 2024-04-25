@@ -1,0 +1,22 @@
+.btn button {
+  padding: 8px 25px;
+  border-radius: 10px;
+  border: 1px solid;
+}
+.btn.dark button {
+  background-color: var(--black);
+  border-color: var(--black);
+  color: var(--white);
+}
+.btn.dark button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+.btn.light button {
+  background-color: var(--white);
+  color: var(--black);
+  border-color: var(--white);
+}
+.btn.light button:hover {
+  background-color: var(--paleGray);
+}

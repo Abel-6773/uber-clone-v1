@@ -1,0 +1,14 @@
+.nested-drop-down ul {
+  padding: 0px;
+}
+.nested-drop-down li {
+  list-style: none;
+  padding-bottom: 15px;
+}
+.nested-drop-down li:nth-last-of-type() {
+  padding-bottom: 0px;
+}
+.nested-drop-down a {
+  color: var(--black);
+  text-decoration: none;
+}

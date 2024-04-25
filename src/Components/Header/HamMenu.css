@@ -1,0 +1,35 @@
+.Ham-Menu {
+  background-color: white;
+  z-index: 200;
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  transform: translateY(-1000px);
+}
+.Ham-Menu.active {
+  transform: translateY(0px);
+}
+.Ham-Menu ul {
+  margin: 20px 20px 0px 20px;
+}
+.Ham-Menu ul li {
+  list-style: none;
+}
+.Ham-Menu > ul > a {
+  display: block;
+  color: var(--black);
+  text-decoration: none;
+  padding-bottom: 30px;
+}
+ul .information {
+  display: flex;
+}
+ul .information li {
+  margin-right: auto;
+}
+.Ham-Menu .language {
+  display: block;
+  color: black;
+  text-decoration: none;
+  margin: 0px 0px 80px 40px;
+}

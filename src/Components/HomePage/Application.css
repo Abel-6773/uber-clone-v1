@@ -1,0 +1,17 @@
+.arrow-icon {
+  padding: 10px;
+}
+.arrow-icon-active {
+  padding: 10px;
+  transform: translateX(20px);
+}
+.uber-img {
+  padding: 10px 10px;
+  margin-right: 10px;
+  border-radius: 10px;
+  background-color: var(--black);
+  color: var(--white);
+}
+.uber-img p {
+  font-weight: 400;
+}

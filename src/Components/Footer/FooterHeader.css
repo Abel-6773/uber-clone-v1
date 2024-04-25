@@ -1,0 +1,10 @@
+.footer-header {
+  display: flex;
+  justify-content: space-between;
+  color: var(--white);
+  padding: 50px 0px;
+}
+.footer-header a {
+  color: var(--white);
+  text-decoration: none;
+}

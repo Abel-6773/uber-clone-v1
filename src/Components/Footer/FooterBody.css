@@ -1,0 +1,9 @@
+.footer-body {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.footer-body a {
+  color: var(--white);
+  display: block;
+  text-decoration: none;
+}

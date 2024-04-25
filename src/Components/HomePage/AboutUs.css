@@ -1,0 +1,21 @@
+/* .about-us {
+  /* margin: 80px auto; */
+/* display: grid;
+  grid-template-columns: auto auto;
+  grid-row-gap: 100px;
+  align-items: center;
+  justify-items: center; */
+/* } */
+.about-us .info-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0px;
+}
+.about-us-img img {
+  width: 550px;
+  height: 550px;
+}
+.about-info {
+  max-width: 450px;
+}

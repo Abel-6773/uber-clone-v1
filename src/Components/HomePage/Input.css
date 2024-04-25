@@ -1,0 +1,45 @@
+.hero-input input {
+  display: block;
+  margin: 15px 0px;
+  padding: 15px 40px;
+  width: 350px;
+  border-radius: 8px;
+  border: 1px solid black;
+}
+.from,
+.to {
+  position: relative;
+  width: fit-content;
+}
+.location-icon {
+  position: absolute;
+  z-index: 100;
+  top: 13px;
+  right: 15px;
+}
+.from-dot {
+  width: 7px;
+  height: 7px;
+  background-color: var(--black);
+  border-radius: 50%;
+  position: absolute;
+  top: 45%;
+  left: 15px;
+}
+.to-dot {
+  width: 7px;
+  height: 7px;
+  background-color: var(--black);
+  position: absolute;
+  top: 45%;
+  left: 15px;
+}
+.link-line {
+  height: 55px;
+  width: 0.1px;
+  border-right: 0.1px solid white;
+  position: absolute;
+  top: 50%;
+  left: 18px;
+  z-index: 100;
+}

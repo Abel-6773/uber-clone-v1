@@ -1,0 +1,6 @@
+.link-grey:hover {
+  color: var(--lightGray);
+}
+.link-grey {
+  width: fit-content;
+}

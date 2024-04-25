@@ -1,0 +1,54 @@
+.page-links {
+  margin: 10px 0px;
+}
+.page-links a {
+  text-decoration: none;
+  color: var(--white);
+}
+.page-links ul a.active {
+  text-decoration: underline var(--white);
+  text-underline-offset: 20px;
+}
+.page-links ul a:hover {
+  text-decoration: underline var(--white);
+  text-underline-offset: 20px;
+}
+.page-links li {
+  list-style: none;
+  padding: 10px 20px;
+}
+.page-links,
+.page-links ul {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  margin-right: 35px;
+}
+.page-links .information {
+  color: white;
+  display: block;
+}
+.page-links .information-header {
+  display: flex;
+  align-items: center;
+}
+.page-links .information-header .fonticon {
+  margin-left: 10px;
+}
+.page-links .information-body {
+  position: absolute;
+  background-color: var(--white);
+  color: var(--black);
+  margin-top: 20px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  z-index: 100;
+}
+.page-links .information-body p {
+  padding: 5px 0px 5px 15px;
+}
+.page-links .information-body p:hover {
+  background-color: var(--paleGray);
+  cursor: pointer;
+}
