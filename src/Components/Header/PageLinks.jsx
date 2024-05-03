@@ -36,7 +36,7 @@ export default function PageLinks() {
         <NavLink to="DriversPage">
           <li>For drivers</li>
         </NavLink>
-        <NavLink to="BeingBuilt">
+        <NavLink to="PassingPage">
           <li>Passing</li>
         </NavLink>
         <NavLink to="BusinessPage">

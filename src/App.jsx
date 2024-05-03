@@ -11,6 +11,7 @@ import DriversPage from "./Pages/DriversPage";
 import BeingBuilt from "./Components/Features/BeingBuilt";
 import PageNotFound from "./Components/Features/PageNotFound";
 import BusinessPage from "./Pages/BusinessPage";
+import Passing from "./Components/PassingPage/Passing";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -18,7 +19,7 @@ const router = createBrowserRouter(
       <Route index element={<HomePage />} />
       <Route path="DriversPage" element={<DriversPage />} />
       <Route path="BusinessPage" element={<BusinessPage />} />
-      <Route path="BeingBuilt" element={<BeingBuilt />} />
+      <Route path="PassingPage" element={<Passing />} />
       <Route path="*" element={<PageNotFound />} />
     </Route>
   )
