@@ -18,11 +18,11 @@ export default function Passing() {
           <div className="after-line"></div>
         </div>
         <div className="auth">
-          <img src="public\images\189824.webp" alt="" />
+          <img src="public\images\189824.jpg" alt="" />
           <p>Continue with Google</p>
         </div>
         <div className="auth">
-          <img src="public\images\572947.webp" alt="" />
+          <img src="public\images\572947.jpg" alt="" />
           <p>Continue with Apple</p>
         </div>
         <div className="section-break">
