@@ -15,7 +15,13 @@ export default function DriversNav() {
   return (
     <nav className="drivers-nav ">
       <div
-        className={`drivers-nav-content ${isSmallScreen && "mb"} container-xl`}
+        className={
+          isSmallScreen
+            ? "drivers-nav-content mb container-xl"
+            : "drivers-nav-content container-xl"
+        }
+
+        // className={`drivers-nav-content ${isSmallScreen && "mb"} container-xl`}
       >
         <div onClick={toggleActive} className="drivers-logo">
           <p className="logo txt-logo">Drive </p>
@@ -29,7 +35,14 @@ export default function DriversNav() {
             />
           )}
         </div>
-        <div className={`drivers-links ${isDropDownActive && "active"} txt-xs`}>
+        <div
+          className={
+            isDropDownActive
+              ? "drivers-links active txt-xs"
+              : "drivers-links txt-xs"
+          }
+          // className={`drivers-links ${isDropDownActive && "active"} txt-xs`}
+        >
           <ul className={isSmallScreen && "mb"}>
             <NavLink>
               <li>Overview</li>

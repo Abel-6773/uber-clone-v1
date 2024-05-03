@@ -1,5 +1,6 @@
 import "./DriversFaq.css";
 import BtnUnderline from "../UI/BtnUnderline";
+import { v4 as uuid } from "uuid";
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleUp } from "@fortawesome/free-solid-svg-icons";
@@ -56,6 +57,7 @@ export default function DriversFaq() {
         {faq.map((question) => {
           return (
             <div
+              key={uuid()}
               className="faq"
               onClick={() => {
                 faqToggler(question.id);
